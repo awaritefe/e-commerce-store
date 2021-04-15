@@ -1,1 +1,10 @@
 // Specific CSS for your home-page
+.main-logo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.main-logo {
+  display: flex;
+  justify-content: center;
+}
