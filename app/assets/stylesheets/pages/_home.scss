@@ -49,3 +49,47 @@
   height: 500px;
   margin: 10px;
 }
+.home-card h1 {
+  margin: 0;
+  color: #E6E6E6;
+  // text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  // font-size: 32px;
+  font-weight: bold;
+  padding: 10px 0px 0px 10px;
+  font-family: Poppins;
+}
+.home-card p {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  padding: 0px 0px 10px 10px;
+  font-family: Poppins;
+  font-weight: lighter;
+}
+.form-container {
+  width: 400px;
+  margin-left: 10px;
+}
+.btn-email {
+  width: 190px;
+  background-color: black;
+  border-radius: 0px;
+  color: white;
+}
+.form-row .email-form {
+  border: solid;
+  padding-right: 0px;
+}
+.form-logo img {
+  width: 150px;
+  height: 150px;
+}
+.form-logo p {
+  font-size: 15px;
+}
+.vl {
+  height: 300px;
+  border-left: 2px solid #E6E6E6;
+  margin: 0px 10px 0px 10px;
+
+}

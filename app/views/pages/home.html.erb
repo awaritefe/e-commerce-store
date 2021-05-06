@@ -1,19 +1,42 @@
-<div class="container">
-  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://i.picsum.photos/id/1059/7360/4912.jpg?hmac=vVWk1qyiXN_VgPhpNqFm3yl2HUPW6fHqYOjTHYO2bHQ);">
-    <div class="container">
-      <!-- <h1>Le Wagon brings <strong>tech skills</strong> to <strong>creative people</strong>!</h1>
-      <p>Change your life and learn to code at one of our campuses around the world.</p> -->
+<div class="home-container">
+  <div class="container">
+    <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://i.picsum.photos/id/1059/7360/4912.jpg?hmac=vVWk1qyiXN_VgPhpNqFm3yl2HUPW6fHqYOjTHYO2bHQ);">
+      <!-- <div class="container"> -->
+        <!-- <h1>Le Wagon brings <strong>tech skills</strong> to <strong>creative people</strong>!</h1>
+        <p>Change your life and learn to code at one of our campuses around the world.</p> -->
+      <!-- </div> -->
     </div>
-  </div>
-  <div class="nav-card">
-    <div class="home-card" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://i.picsum.photos/id/856/4500/3112.jpg?hmac=VFr8pGzI1NbVoTha8W_Mw11pqEvh8OW5QXOAcZbGrBY);">
-      <div class="card-text">
-        <h1><strong><em>Browse</em></strong></h1>
+    <div class="nav-card">
+      <div class="home-card" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://i.picsum.photos/id/856/4500/3112.jpg?hmac=VFr8pGzI1NbVoTha8W_Mw11pqEvh8OW5QXOAcZbGrBY);">
+        <div class="card-text">
+          <h1><em>BROWSE</em></h1>
+          <P>See all products</P>
+        </div>
+      </div>
+      <div class="home-card" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://i.picsum.photos/id/669/4869/3456.jpg?hmac=g-4rQWsPdHoLi5g6ahHlvjKubSQzR-D9m7-WtblbmyM);">
+        <div class="card-text">
+          <h1><em>POPULAR</em></h1>
+          <P>Shop most loved</P>
+        </div>
       </div>
     </div>
-    <div class="home-card" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://i.picsum.photos/id/669/4869/3456.jpg?hmac=g-4rQWsPdHoLi5g6ahHlvjKubSQzR-D9m7-WtblbmyM);">
-      <div class="card-text">
-        <h1><strong><em>Popular</em></strong></h1>
+    <hr>
+    <div class="d-flex justify-content-center">
+      <%= render "shared/carousel" %>
+      <div class="vl"></div>
+      <div class="form-container">
+        <div class="form-logo d-flex">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Maiores laudantium minus omnis a molestiae non dicta nisi culpa nesciunt ipsum aut, ratione qui quaerat laborum nulla voluptate quia reiciendis dolore!</p>
+          <%= image_tag "logo" %>
+        </div>
+        <form>
+          <div class="form-row">
+            <div class="form-group email-form d-flex">
+              <label for="inputEmail4"></label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="email@example.com">
+              <button type="submit" class="btn btn-email">Sign up</button>
+            </div>
+        </form>
       </div>
     </div>
   </div>
