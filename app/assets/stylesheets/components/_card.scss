@@ -1,0 +1,39 @@
+.card-container {
+  height: 300px;
+  width: 300px;
+}
+.card-container img {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  z-index: -1;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: inherit;
+  opacity: 0;
+}
+.card-info:hover {
+  background-color: rgba(255,255,255,0.5);
+  transition: ease 1s;
+  opacity: 1;
+}
+
+.card-info h3, p {
+  color: #333333;
+  font-family: poppins;
+}
+.card-info p {
+  font-weight: lighter;
+  font-size: 20px;
+  font-weight: 300;
+}
+.card-info h3 {
+  font-weight: 300;
+  font-size: 40px;
+}
+
