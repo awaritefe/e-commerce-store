@@ -1,12 +1,17 @@
 .card-container {
-  height: 300px;
-  width: 300px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  height: 100vh;
 }
 .card-container img {
   height: 300px;
   width: 300px;
   position: absolute;
   z-index: -1;
+}
+.index-card {
+  height: 300px;
+  width: 300px;
 }
 
 .card-info {
@@ -35,5 +40,6 @@
 .card-info h3 {
   font-weight: 300;
   font-size: 40px;
+  text-align: center;
 }
 
