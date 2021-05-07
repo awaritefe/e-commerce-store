@@ -13,13 +13,13 @@
   padding: 20px;
 }
 .info-container h3 {
-  color: white;
+  color: #333333;
 }
 .footer-links {
   display: flex;
 }
 .footer-links a {
-  color: white;
+  color: #333333;
   opacity: 0.15;
   text-decoration: none;
   font-size: 35px;
@@ -33,14 +33,14 @@
 }
 .footer-info li {
   list-style-type: none;
-  color: white;
+  color: #333333;
   opacity: 0.15;
 }
 .footer-info li:hover {
   opacity: 1;
 }
 .footer-copyright {
-  color: white;
+  color: #333333;
   opacity: 0.30;
   display: flex;
   justify-content: flex-end;
