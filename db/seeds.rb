@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+puts "Cleaning database..."
+Product.destroy_all
+puts "Creating products..."
+jacket = { name: "Jacket", description: "light jacket", price: 89.99 }
+
+puts "PRODUCTS"
+[ jacket ].each do |attributes|
+  product = Product.create!(attributes)
+  puts "Created #{product.name}"
+end
+puts "Finished"

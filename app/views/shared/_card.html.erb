@@ -1,0 +1,13 @@
+
+<div class="card-container">
+  <% @products.each do |product| %>
+    <div class="index-card">
+      <%= image_tag "vans", alt: "Vans jacket"%>
+      <div class="card-info">
+        <h3><%= product.name %></h3>
+        <p><%= product.price %></p>
+      </div>
+    </div>
+  <% end %>
+</div>
+<!-- May have to use background-image as product image to get result -->
