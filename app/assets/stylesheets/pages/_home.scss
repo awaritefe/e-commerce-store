@@ -48,6 +48,7 @@
   width: 434px;
   height: 500px;
   margin: 10px;
+  text-decoration: none;
 }
 .home-card h1 {
   margin: 0;
@@ -91,5 +92,7 @@
   height: 300px;
   border-left: 2px solid #E6E6E6;
   margin: 0px 10px 0px 10px;
-
+}
+.nav-card a {
+  text-decoration: none;
 }

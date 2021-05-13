@@ -9,7 +9,7 @@
 }
 .info-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 20px;
 }
 .info-container h3 {
@@ -17,6 +17,7 @@
 }
 .footer-links {
   display: flex;
+  padding-top: 30px;
 }
 .footer-links a {
   color: #333333;
@@ -45,4 +46,6 @@
   display: flex;
   justify-content: flex-end;
 }
-
+.link-container {
+  text-align: center;
+}

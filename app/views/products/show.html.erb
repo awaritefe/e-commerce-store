@@ -1,1 +1,13 @@
-<h1>Hello Show page</h1>
+
+<div class="container">
+  <div class="show-box">
+    <div class="show-pic">
+      <%= image_tag "vans", alt: "Vans jacket"%>
+    </div>
+    <div class="show-info">
+      <h1><%= @product.name %></h1>
+      <h2>£<%= @product.price %></h2>
+    </div>
+  </div>
+  <p><%=  @product.description %></p>
+</div>

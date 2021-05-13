@@ -15,9 +15,13 @@
   <body>
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
+
     <div class="main-logo">
-      <%= image_tag "logo" %>
+      <%= link_to :root do %>
+        <%= image_tag "logo" %>
+      <% end %>
     </div>
+
     <%= render 'shared/pages_navbar' %>
 
     <p class="notice"><%= notice %></p>
