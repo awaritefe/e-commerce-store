@@ -6,5 +6,10 @@
   display: flex;
 }
 .show-info {
-margin: 0 0 0 30px;
+  margin: 0 0 0 30px;
+}
+.show-description p {
+  padding-top: 10px;
+  font-weight: 200;
+  max-width: 500px;
 }

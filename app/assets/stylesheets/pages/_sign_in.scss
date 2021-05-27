@@ -1,0 +1,30 @@
+
+.login-form {
+  max-width: 500px;
+  text-align: center;
+  margin: auto;
+  border-radius: 3px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+.form-actions {
+  width: 100px;
+  margin: auto;
+  border-radius: 3px;
+  background-color: midnightblue;
+
+}
+.form-actions .btn {
+  color: white;
+}
+
+.form-inputs {
+  max-width: 300px;
+  margin: auto;
+}
+.form-control {
+  border: solid 2px ghostwhite;
+}
+.login-form h2 {
+  color: #ABC4A1;
+}
