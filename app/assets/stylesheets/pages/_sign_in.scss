@@ -6,6 +6,7 @@
   border-radius: 3px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
   padding: 15px;
+  background-color: #ABC4A1;
 }
 .form-actions {
   width: 100px;
@@ -26,5 +27,15 @@
   border: solid 2px ghostwhite;
 }
 .login-form h2 {
-  color: #ABC4A1;
+  color: midnightblue;
+}
+
+// Password
+.pass-btn {
+  width: 150px;
+}
+
+// edit
+.cancel-acc {
+  margin: 10px;
 }
