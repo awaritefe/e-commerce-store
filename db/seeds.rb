@@ -42,4 +42,7 @@ puts "PRODUCTS"
   product = Product.create!(attributes)
   puts "Created #{product.name}"
 end
+
+puts "TEST ADMIN"
+admin = Admin.create!({ email: "test@test.com", password: "Qwerty1!" })
 puts "Finished"
