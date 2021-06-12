@@ -10,8 +10,8 @@ Rails.application.routes.draw do
 
   namespace :admin do
     root to: 'products#index'
-    resources :products
-    resources :categories
+    resources :products, only: [:index, :new, :create, :edit, :update, :destroy]
+    resources :categories, only: [:index, :new, :create, :edit, :update, :destroy]
   end
 
 end

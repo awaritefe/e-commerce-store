@@ -13,10 +13,10 @@ class Admin::ProductsController < ApplicationController
   def create
     @product = Product.new(product_params)
     if @product.save
-     @category_array = params.dig(:product, :category_ids)
-     @category_array.each do |cat|
-      @category = Category.find(cat)
-      @product.categories << @category
+      @category_array = params.dig(:product, :category_ids)
+      @category_array.each do |cat|
+        @category = Category.find(cat)
+        @product.categories << @category
       end
       flash[:notice] = "Product added!"
       redirect_to admin_product_path
@@ -57,5 +57,4 @@ class Admin::ProductsController < ApplicationController
   def product_params
     params.require(:product).permit(:name, :description, :price)
   end
-
 end
