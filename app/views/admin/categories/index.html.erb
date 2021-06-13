@@ -1,8 +1,19 @@
 <div class="jumbotron">
   <h1>Admin | Categories</h1>
+</div>
   <div class="container">
     <div class="row">
       <%= link_to "Add Category", new_admin_category_path %>
+      <table class="col-12">
+        <thead>
+          <th>Name</th>
+        </thead>
+        <tbody>
+          <% @categories.each do |category| %>
+          <%= render partial: "admin_category", collection: @categories %>
+          <% end %>
+        </tbody>
+      </table>
     </div>
   </div>
-</div>
+
