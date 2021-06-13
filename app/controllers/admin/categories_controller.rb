@@ -14,7 +14,7 @@ class Admin::CategoriesController < ApplicationController
     @category = Category.new(category_params)
     if @category.save
       flash[:notice] = "Category was added!"
-      redirect_to admin_category_path
+      redirect_to admin_categories_path
     else
       flash[:notice] = "Category cannot be blank!"
       render 'admin/product/new'
@@ -29,7 +29,7 @@ class Admin::CategoriesController < ApplicationController
     @category = Category.find(params[:id])
     if @category.update(category_params)
       flash[:notice] = "Category updated!"
-      redirect_to admin_category_path
+      redirect_to admin_categories_path
     else
       render :edit
     end
@@ -38,7 +38,7 @@ class Admin::CategoriesController < ApplicationController
   def destroy
     @category = Category.destroy(params[:id])
     flash[:notice] = "Category removed!"
-    redirect_to admin_category_path
+    redirect_to admin_categories_path
   end
 
   private
