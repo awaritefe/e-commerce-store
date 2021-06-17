@@ -1,1 +1,18 @@
-index.html.erb
+<div class="jumbotron">
+  <h1>Admin | Products</h1>
+</div>
+  <div class="container">
+    <div class="row">
+      <%= link_to "Add Category", new_admin_product_path %>
+      <table class="col-12">
+        <thead>
+          <th>Name</th>
+        </thead>
+        <tbody>
+          <% @products.each do |product| %>
+          <%= render partial: "admin_product", collection: @products %>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
