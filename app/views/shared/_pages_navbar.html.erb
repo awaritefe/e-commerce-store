@@ -9,11 +9,13 @@
     <div class="middle-links">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Mens <span class="sr-only">(current)</span></a>
+        <a class="nav-link"><%= link_to "Home", root_path %></a>
       </li>
+      <% Category.all.each do |category| %>
       <li class="nav-item">
-        <a class="nav-link" href="#">Womens</a>
+        <a class="nav-link"><%= link_to category.name.capitalize, category_path(category) %></a>
       </li>
+      <% end %>
       <li class="nav-item">
         <a class="nav-link disabled" href="#">Accessories</a>
       </li>
@@ -21,6 +23,16 @@
         <a class="nav-link disabled" href="#">Sale</a>
       </li>
     </ul>
+    <% if admin_signed_in? %>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link"><%= link_to "Categories", admin_categories_path %></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"><%= link_to "Products", admin_products_path %></a>
+      </li>
+    </ul>
+    <% end %>
     </div>
   </div>
 </nav>
