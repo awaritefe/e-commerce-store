@@ -19,7 +19,7 @@ class Admin::ProductsController < ApplicationController
         @product.categories << @category
       end
       flash[:notice] = "Product added!"
-      redirect_to admin_product_path
+      redirect_to admin_products_path
     else
       flash[:notice] = "Product cannot be blank!"
       render 'admin/product/new'
@@ -40,7 +40,7 @@ class Admin::ProductsController < ApplicationController
         @product.categories << @category
       end
       flash[:notice] = "product updated!"
-      redirect_to admin_product_path
+      redirect_to admin_products_path
     else
       render :edit
     end
@@ -49,7 +49,7 @@ class Admin::ProductsController < ApplicationController
   def destroy
     @product = Product.destroy(params[:id])
     flash[:notice] = "product removed!"
-    redirect_to admin_product_path
+    redirect_to admin_products_path
   end
 
   private

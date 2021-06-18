@@ -8,22 +8,22 @@
 
 puts "Cleaning database..."
 Product.destroy_all
-puts "Creating products..."
-jacket = {
-  name: "Vans Classic",
-  description: "Classic Jacket Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu erat non dui pulvinar semper eu ut est. Nullam laoreet tellus vestibulum facilisis fermentum. Nam nec ipsum et ipsum consectetur commodo sit amet sit amet lectus. Proin finibus vel orci ut vulputate. Cras porta, justo nec tincidunt dapibus, mi dolor feugiat nulla, ac tristique tellus mi non mauris.",
-  price: 89.99
-}
-skater_jacket = {
-  name: "Vans Skater Jacket",
-  description: "Skater jacket Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu erat non dui pulvinar semper eu ut est. Nullam laoreet tellus vestibulum facilisis fermentum. Nam nec ipsum et ipsum consectetur commodo sit amet sit amet lectus. Proin finibus vel orci ut vulputate. Cras porta, justo nec tincidunt dapibus, mi dolor feugiat nulla, ac tristique tellus mi non mauris.",
-  price: 49.99
-}
-shirt_jacket = {
-  name: "Vans Shirt Jacket",
-  description: "Shirt Jacket Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu erat non dui pulvinar semper eu ut est. Nullam laoreet tellus vestibulum facilisis fermentum. Nam nec ipsum et ipsum consectetur commodo sit amet sit amet lectus. Proin finibus vel orci ut vulputate. Cras porta, justo nec tincidunt dapibus, mi dolor feugiat nulla, ac tristique tellus mi non mauris.",
-  price: 69.99
-}
+# puts "Creating products..."
+# jacket = {
+#   name: "Vans Classic",
+#   description: "Classic Jacket Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu erat non dui pulvinar semper eu ut est. Nullam laoreet tellus vestibulum facilisis fermentum. Nam nec ipsum et ipsum consectetur commodo sit amet sit amet lectus. Proin finibus vel orci ut vulputate. Cras porta, justo nec tincidunt dapibus, mi dolor feugiat nulla, ac tristique tellus mi non mauris.",
+#   price: 89.99
+# }
+# skater_jacket = {
+#   name: "Vans Skater Jacket",
+#   description: "Skater jacket Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu erat non dui pulvinar semper eu ut est. Nullam laoreet tellus vestibulum facilisis fermentum. Nam nec ipsum et ipsum consectetur commodo sit amet sit amet lectus. Proin finibus vel orci ut vulputate. Cras porta, justo nec tincidunt dapibus, mi dolor feugiat nulla, ac tristique tellus mi non mauris.",
+#   price: 49.99
+# }
+# shirt_jacket = {
+#   name: "Vans Shirt Jacket",
+#   description: "Shirt Jacket Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu erat non dui pulvinar semper eu ut est. Nullam laoreet tellus vestibulum facilisis fermentum. Nam nec ipsum et ipsum consectetur commodo sit amet sit amet lectus. Proin finibus vel orci ut vulputate. Cras porta, justo nec tincidunt dapibus, mi dolor feugiat nulla, ac tristique tellus mi non mauris.",
+#   price: 69.99
+# }
 
 puts "Creating categories..."
 mens = { name: "Mens"}
@@ -38,10 +38,9 @@ puts "CATEGORIES"
 end
 
 puts "PRODUCTS"
-[ jacket, skater_jacket, shirt_jacket ].each do |attributes|
-  product = Product.create!(attributes)
-  puts "Created #{product.name}"
-end
+  product = Product.create!({name: "Vans Classic", description: "Classic Jacket Lorem ipsum dolor sit amet, consectetur adipiscing elit.", price: 89.99, })
+  product = Product.create!({name: "Vans Skater Jacket", description: "Skater Jacket Lorem ipsum dolor sit amet, consectetur adipiscing elit.", price: 69.99, })
+  product = Product.create!({name: "Vans Shirt Jacket", description: "Shirt Jacket Jacket Lorem ipsum dolor sit amet, consectetur adipiscing elit.", price: 89.99, })
 
 puts "TEST ADMIN"
 admin = Admin.create!({ email: "test@test.com", password: "Qwerty1!" })
