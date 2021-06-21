@@ -1,4 +1,4 @@
 <h1><%= @category.name %></h1>
 <div class="container">
-    <%= render "shared/card" %>
+    <%= render partial: "shared/card", collection: @products %>
 </div>
